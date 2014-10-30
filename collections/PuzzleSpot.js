@@ -1,0 +1,1 @@
+PuzzleSpot = new Meteor.Collection('puzzleSpot');

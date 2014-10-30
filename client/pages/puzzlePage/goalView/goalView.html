@@ -1,0 +1,10 @@
+
+<template name="goalView">
+	{{#GridLayout size="[undefined, undefined]" dimensions="[3,1]"}}
+		{{#famousEach puzzleSpots}}
+			{{>Surface template="goalSurface" modifier="modifier" size="[undefined, undefined]"}}
+		{{/famousEach}}
+	{{/GridLayout}}
+</template>
+
+
