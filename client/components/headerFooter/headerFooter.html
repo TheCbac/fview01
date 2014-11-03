@@ -1,0 +1,16 @@
+<template name="headerFooter">
+	{{#HeaderFooterLayout size="[undefined, undefined]" headerSize="50" footerSize="50"}}
+
+		{{#View target="header" modifier="modifier"}}
+			{{>yield region="header"}}
+		{{/View}}
+
+		{{#View target="content" modifier="modifier"}}
+			{{>yield}}
+		{{/View}}
+
+		{{#View target="footer" modifier="modifier"}}
+			{{>yield region="footer"}}
+		{{/View}}
+	{{/HeaderFooterLayout}}
+</template>
