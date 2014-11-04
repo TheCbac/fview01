@@ -15,5 +15,4 @@ Template.goalSurface.rendered = function() {
   fview.modifier.setSize([100,100]);
   fview.modifier.setOrigin([0.5,0.5]);
   fview.modifier.setAlign([0.5,0.5]);
- //fview.modifier.setDraggable(true);
 };

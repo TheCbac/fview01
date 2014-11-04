@@ -1,0 +1,35 @@
+<template name ="dragSideBar">
+
+	{{>Scrollview template="dragSideBarContent" size = "[200,undefined]" modifier = "modifier" origin="[0.9, 0.5]" align="[0.9, 0.5]" translate="[0,0,-1]" }}
+
+	{{>buttonView}}
+</template>
+
+
+<template name ="buttonView">
+
+	<div>
+		{{>Surface template ="button1" modifier="modifier" origin="[0.1,0.5]" align="[0.1,0.5]"  size="[50,20]" translate="[0,0,9]"}}
+	</div>
+</template>
+
+<template name="button1">
+		<div>
+			Button
+		</div>
+		
+</template>
+
+<template name ="dragSideBarContent">
+	{{#each drags}}
+		{{#Surface size="[125,125]" modifier ="Draggable" translate="[0,0,0]"}}
+			{{>blah}}
+			ee
+		{{/Surface}}
+	{{/each}}	
+</template>
+
+<template name="blah">
+	test
+</template>
+

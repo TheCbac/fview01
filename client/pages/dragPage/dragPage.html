@@ -1,9 +1,14 @@
 <template name="dragPage">
-	{{>View template="dragPageContent" size="[undefined,undefined]" modifier="modifier"}}
+	{{>View template="dragPageContent" size="[1000,200]" modifier="modifier"}}
+
+	{{>dragSideBar}}
+
 </template>
 
 <template name="dragPageContent">
 	{{>Surface template ="dragSquare" size="[100,100]" modifier="Draggable"}}
+
+	{{>Surface template="dragSquare" size="[100,100]" modifier="Draggable" translate='[0,0,1]'}}
 
 </template>
 

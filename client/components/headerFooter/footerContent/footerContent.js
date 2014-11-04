@@ -5,3 +5,4 @@ Template.footerContent.rendered = function () {
 		textAlign: 'center'
 	});
 };
+
